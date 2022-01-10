@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-service-registry
+  zipkin:
+    enabled: false
+
+server:
+  name: service-registry
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
